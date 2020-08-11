@@ -5,7 +5,7 @@ except ImportError:
 
 import json
 
-myAPI = "RGAPI-4a248c34-f7e5-470f-b49a-452e82220a58"
+myAPI = "I DONT KNOW HOW TO HIDE MY CODE
 
 rankURL = "https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/" \
           "DfaD_-zgTcHJydv9BdaXWvG55OShTP8CkbeXtLqcSElHQqU?" \
