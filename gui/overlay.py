@@ -2,6 +2,7 @@ from tkinter import *
 from Item import *
 from RiotAPI import *
 from gui.Settings import *
+from gui.Items import *
 
 
 root = Tk()
@@ -26,7 +27,7 @@ rank = Label(bottomFrame, text=getRank())
 rank.configure(background="#b9bfc4")
 rank.pack(side=LEFT)
 
-button1 = Button(topFrame, text="Items")
+button1 = Button(topFrame, text="Items", command=lambda: item_click())
 button2 = Button(topFrame, text="Comps")
 button3 = Button(topFrame, text="Levels")
 button4 = Button(topFrame, text="Settings", command=lambda: sett_click())

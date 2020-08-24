@@ -3,8 +3,6 @@ from tkinter import *
 sett_status = 0
 # 0 = off
 # 1 = on
-sett = Tk()
-sett.destroy()
 
 
 def sett_click():
@@ -13,7 +11,7 @@ def sett_click():
     if sett_status == 0:
         global sett
         sett_status = 1
-        sett = Tk()
+        sett = Toplevel()
 
         sett.geometry('200x300+0+80')
         sett.attributes("-topmost", True)

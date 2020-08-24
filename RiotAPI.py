@@ -5,7 +5,7 @@ except ImportError:
 
 import json
 
-myAPI = "RGAPI-5c7f1cf7-92d9-4b31-a569-eb49d66346ee"
+myAPI = "RGAPI-4315a404-daaa-43d5-83f7-fa9bc55b3186"
 
 rankURL = "https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/" \
           "DfaD_-zgTcHJydv9BdaXWvG55OShTP8CkbeXtLqcSElHQqU?" \

@@ -1,16 +1,29 @@
-from Item import *
 from tkinter import *
+from PIL import ImageTk, Image
+
+
+item_status = 0
+# 0 = off
+# 1 = on
 
 
 def item_click():
-    item = Tk()
+    global item_status
 
-    item.attributes("-topmost", True)
-    item.geometry('200x300+0+80')
+    if item_status == 0:
+        global item
+        item_status = 1
+        item = Toplevel()
 
-    top_frame = Frame(item)
-    top_frame.pack()
+        item.geometry('600x600+0+80')
+        sheet = Canvas(item, width=543, height=562)
+        sheet.pack()
+        img = ImageTk.PhotoImage(Image.open("ItemTFT.PNG"))
+        item.attributes("-topmost", True)
+        sheet.create_image(0, 0, anchor=NW, image=img)
 
-    bottom_frame = Frame(item)
-    bottom_frame.pack(side=BOTTOM)
+        item.mainloop()
 
+    else:
+        item.destroy()
+        item_status = 0
