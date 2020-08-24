@@ -46,7 +46,7 @@ Shojin = Item("Spear of Shojin", "+15 Attack Damage, + 15 Starting Mana",
               "After casting Special Ability for the first time, basic attacks "
               "restore an additional 18% of maximum mana."
               , BF, Tear,
-              "test")
+              "test")   
 
 
 
